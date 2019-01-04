@@ -1,0 +1,18 @@
+---
+comment: 'join.me Video TCP -'
+policy: allow
+protocol: tcp
+destPort: 443
+destCidr: '64.94.18.0/24, 64.74.103.0/24, 64.74.17.0/24, 63.251.34.0/24, 216.52.233.0/24, 111.221.57.0/24, 117.20.45.0/24, 190.210.65.0/24, 177.154.130.0/24, 95.172.70.0/24'
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: 'join.me Video UPD -'
+policy: allow
+protocol: udp
+destPort: 1853
+destCidr: '64.94.18.0/24, 64.74.103.0/24, 64.74.17.0/24, 63.251.34.0/24, 216.52.233.0/24, 111.221.57.0/24, 117.20.45.0/24, 190.210.65.0/24, 177.154.130.0/24, 95.172.70.0/24'
+srcCidr: any
+srcPort: any
+syslogEnabled: False

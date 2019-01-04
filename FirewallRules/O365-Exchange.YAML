@@ -1,0 +1,27 @@
+---
+comment: 'O365 Exchange Online - https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges'
+policy: allow
+protocol: tcp
+destPort: 80, 443
+destCidr: 'outlook.office.com, outlook.office365.com, r1.res.office365.com, r3.res.office365.com, r4.res.office365.com, domains.live.com, *.outlook.com, *.outlook.office.com, attachments.office.net, *.protection.outlook.com'
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: 'O365 Exchange Online - https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges'
+policy: allow
+protocol: tcp
+destPort: 587
+destCidr: 'smtp.office365.com'
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: 'O365 Exchange Online - https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges'
+policy: allow
+protocol: tcp
+destPort: 25
+destCidr: '*.mail.protection.outlook.com'
+srcCidr: any
+srcPort: any
+syslogEnabled: False

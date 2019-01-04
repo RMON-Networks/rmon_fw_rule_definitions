@@ -1,0 +1,9 @@
+---
+comment: 'EventTracker - https://doccenter.itsupport247.net/#Security_DR_Compliance_Setup_2.Configuration.htm'
+policy: allow
+protocol: tcp
+destPort: 14503, 14506, 14540
+destCidr: '198.17.119.82, 198.17.119.192, 198.17.119.193'
+srcCidr: any
+srcPort: any
+syslogEnabled: False

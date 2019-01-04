@@ -1,0 +1,9 @@
+---
+comment: General Web Traffic
+policy: allow
+protocol: tcp
+destPort: 80, 443
+destCidr: any
+srcCidr: any
+srcPort: any
+syslogEnabled: False

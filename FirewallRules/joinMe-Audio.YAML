@@ -1,0 +1,18 @@
+---
+comment: 'join.me Audio TCP - https://help.join.me/s/article/joinme-jm-faq-firewalls?language=en_US'
+policy: allow
+protocol: tcp
+destPort: 5060-5100
+destCidr: '189.8.82.112/28, 117.120.4.96/28, 115.187.137.232/29, 185.167.188.0/22'
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: 'join.me Audio UDP - https://help.join.me/s/article/joinme-jm-faq-firewalls?language=en_US'
+policy: allow
+protocol: udp
+destPort: 7800-32000
+destCidr: '189.8.82.112/28, 117.120.4.96/28, 115.187.137.232/29, 185.167.188.0/22'
+srcCidr: any
+srcPort: any
+syslogEnabled: False

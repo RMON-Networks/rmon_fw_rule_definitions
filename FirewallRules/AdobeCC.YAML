@@ -1,0 +1,9 @@
+---
+comment: 'AdobeCC - https://helpx.adobe.com/creative-cloud/kb/troubleshoot-download-install.html'
+policy: allow
+protocol: tcp
+destPort: 80
+destCidr: 'ccmdl.adobe.com, swupmf.adobe.com, swupdl.adobe.com'
+srcCidr: any
+srcPort: any
+syslogEnabled: False

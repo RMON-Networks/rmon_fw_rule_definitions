@@ -1,0 +1,9 @@
+---
+comment: 'WebEX-https://collaborationhelp.cisco.com/article/en-us/WBX264'
+policy: allow
+protocol: udp
+destPort: 9000
+destCidr: '64.68.96.0/19, 66.114.160.0/20, 66.163.32.0/19, 173.39.224.0/19, 173.243.0.0/20, 207.182.160.0/19, 209.197.192.0/19, 216.151.128.0/19, 114.29.192.0/19, 210.4.192.0/20, 69.26.176.0/20, 62.109.192.0/18, 69.26.160.0/20'
+srcCidr: any
+srcPort: any
+syslogEnabled: False

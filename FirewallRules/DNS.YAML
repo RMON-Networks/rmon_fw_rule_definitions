@@ -1,0 +1,9 @@
+---
+comment: General DNS Traffic
+policy: allow
+protocol: udp
+destPort: 53
+destCidr: any
+srcCidr: any
+srcPort: any
+syslogEnabled: False

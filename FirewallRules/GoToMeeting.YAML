@@ -1,0 +1,18 @@
+---
+comment: 'GoToMeeting TCP - https://support.logmeininc.com/gotomeeting/help/optimal-firewall-configuration-g2m060010'
+policy: allow
+protocol: tcp
+destPort: 8200
+destCidr: 'api.filepicker.io, *.filestackapi.com, *.expertcity.com, *.getgo.com, *.getgocdn.com, *.getgoservices.com, *.getgoservices.net, *.goto-rtc.com, *.gotomeet.at, *.gotomeet.me,  *.gotomeeting.com, *.joingotomeeting.com, *.logmeininc.com, *.openvoice.com, *.osdimg.com, *.raas.io'
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: 'GoToMeeting UDP - https://support.logmeininc.com/gotomeeting/help/optimal-firewall-configuration-g2m060010'
+policy: allow
+protocol: udp
+destPort: 8200, 1853
+destCidr: 'api.filepicker.io, *.filestackapi.com, *.expertcity.com, *.getgo.com, *.getgocdn.com, *.getgoservices.com, *.getgoservices.net, *.goto-rtc.com, *.gotomeet.at, *.gotomeet.me,  *.gotomeeting.com, *.joingotomeeting.com, *.logmeininc.com, *.openvoice.com, *.osdimg.com, *.raas.io'
+srcCidr: any
+srcPort: any
+syslogEnabled: False
