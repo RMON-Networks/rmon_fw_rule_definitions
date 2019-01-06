@@ -1,0 +1,36 @@
+---
+comment: 'Meraki cloud communication, VPN registry - https://documentation.meraki.com/zGeneral_Administration/Other_Topics/Firewall_Rules_for_Cloud_Connectivity'
+policy: allow
+protocol: udp
+destCidr: '64.62.142.12/32, 108.161.147.0/24, 199.231.78.0/24, 209.206.48.0/20'
+destPort: 7351, 9350
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: 'Systems Manager agent communication, Backup Meraki cloud communication, Splash pages, Android Systems Manager communication  - https://documentation.meraki.com/zGeneral_Administration/Other_Topics/Firewall_Rules_for_Cloud_Connectivity'
+policy: allow
+protocol: tcp
+destCidr: any
+destPort: 5228-5230
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: 'Backup configuration downloads, Mac/Windows agent communication, Throughput tests live tool, Backup firmware downloads, Mac/Windows remote desktop  - https://documentation.meraki.com/zGeneral_Administration/Other_Topics/Firewall_Rules_for_Cloud_Connectivity'
+policy: allow
+protocol: tcp
+destCidr: '64.62.142.2/32, 108.161.147.0/24, 199.231.78.0/24, 209.206.48.0/20'
+destPort: 993, 7734, 7752
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: 'Backup configuration downloads, Mac/Windows agent communication, Throughput tests live tool, Backup firmware downloads, Mac/Windows remote desktop  - https://documentation.meraki.com/zGeneral_Administration/Other_Topics/Firewall_Rules_for_Cloud_Connectivity'
+policy: allow
+protocol: tcp
+destCidr: '64.62.142.2/32, 108.161.147.0/24, 199.231.78.0/24, 209.206.48.0/20'
+destPort: 60000-61000
+srcCidr: any
+srcPort: any
+syslogEnabled: False
