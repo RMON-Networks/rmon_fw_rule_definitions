@@ -1,0 +1,18 @@
+---
+comment: ''
+policy: [allow, deny]
+protocol: [tcp, udp, any]
+destCidr: [any, IP address, network, FQDN]
+destPort: [any, comma seperated list, range]
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: ''
+policy: [allow, deny]
+protocol: [tcp, udp, any]
+destCidr: [any, IP address, network, FQDN]
+destPort: [any, comma seperated list, range]
+srcCidr: any
+srcPort: any
+syslogEnabled: False
