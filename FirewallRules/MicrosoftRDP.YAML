@@ -1,8 +1,8 @@
 ---
-comment: General Web Traffic
+comment: Microsoft RDP
 policy: allow
 protocol: tcp
-destPort: 80, 8080, 443
+destPort: 3389
 destCidr: any
 srcCidr: any
 srcPort: any

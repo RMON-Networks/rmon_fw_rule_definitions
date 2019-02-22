@@ -1,0 +1,18 @@
+---
+comment: 'RingCentral Supernets - https://support.ringcentral.com/s/article/9233?language=en_US#8.6.3'
+policy: allow
+protocol: any
+destPort: any
+destCidr: '80.81.128.0/20, 103.44.68.0/22, 104.245.56.0/21, 185.23.248.0/22, 192.209.24.0/21, 199.68.212.0/22, 199.255.120.0/22, 208.87.40.0/22'
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: 'RingCentral Firmware and Provisioning - https://support.ringcentral.com/s/article/9233?language=en_US#8.6.3'
+policy: allow
+protocol: tcp
+destPort: 443
+destCidr: 'ringcentral.com, service.ringcentral.com, pp.ringcentral.com, pp.s3.ringcentral.com, cp.ringcentral.com, cp.s3.ringcentral.com, yp.ringcentral.com, yp.s3.ringcentral.com'
+srcCidr: any
+srcPort: any
+syslogEnabled: False

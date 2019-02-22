@@ -1,0 +1,18 @@
+---
+comment: 'ABS Backup Appliance'
+policy: allow
+protocol: tcp
+destPort: 990, 21, 25, 20
+destCidr: '*.absbackup.com'
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: 'ABS Backup Appliance'
+policy: allow
+protocol: tcp
+destPort: 1000-1200
+destCidr: '*.absbackup.com'
+srcCidr: any
+srcPort: any
+syslogEnabled: False
