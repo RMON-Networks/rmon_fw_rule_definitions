@@ -1,9 +1,9 @@
 ---
-comment: 'NTP'
+comment: General Email Traffic
 policy: allow
 protocol: udp
+destPort: 143, 993, 110, 995, 25, 465, 587
 destCidr: any
-destPort: 123
 srcCidr: any
 srcPort: any
 syslogEnabled: False

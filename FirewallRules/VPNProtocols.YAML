@@ -1,0 +1,45 @@
+---
+comment: IPSec-IKE
+policy: allow
+protocol: udp
+destPort: 500
+destCidr: any
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: IPSec-NAT-T
+policy: allow
+protocol: udp
+destPort: 4500
+destCidr: any
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: L2TP TCP
+policy: allow
+protocol: tcp
+destPort: 1701
+destCidr: any
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: L2TP UDP
+policy: allow
+protocol: udp
+destPort: 1701
+destCidr: any
+srcCidr: any
+srcPort: any
+syslogEnabled: False
+---
+comment: PPTP
+policy: allow
+protocol: tcp
+destPort: 1723
+destCidr: any
+srcCidr: any
+srcPort: any
+syslogEnabled: False

@@ -1,8 +1,8 @@
 ---
-comment: General Web Traffic
+comment: 'Sophos Firewall Management'
 policy: allow
-protocol: tcp
-destPort: 80, 8080, 443
+protocol: any
+destPort: 4444
 destCidr: any
 srcCidr: any
 srcPort: any

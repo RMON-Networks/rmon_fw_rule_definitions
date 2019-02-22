@@ -1,8 +1,8 @@
 ---
-comment: General Web Traffic
+comment: SSH
 policy: allow
 protocol: tcp
-destPort: 80, 8080, 443
+destPort: 22
 destCidr: any
 srcCidr: any
 srcPort: any

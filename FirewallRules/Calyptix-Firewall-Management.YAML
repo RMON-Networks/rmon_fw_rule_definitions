@@ -1,8 +1,8 @@
 ---
-comment: General Web Traffic
+comment: 'Calyptix Firewall Management'
 policy: allow
-protocol: tcp
-destPort: 80, 8080, 443
+protocol: any
+destPort: 9443
 destCidr: any
 srcCidr: any
 srcPort: any

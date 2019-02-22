@@ -1,8 +1,8 @@
 ---
-comment: General Web Traffic
+comment: Sophos UYM VPN
 policy: allow
 protocol: tcp
-destPort: 80, 8080, 443
+destPort: 10040
 destCidr: any
 srcCidr: any
 srcPort: any
